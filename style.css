@@ -1,0 +1,245 @@
+:root { /*declaração de variaveis*/
+
+    --cor-titulo1: #FFFFFF;
+    --cor-botao:  #167BF7;
+    --cor-aviso: #C0C0C0;
+    --cor-fundo: #00030C;
+    --font-padrao: 'Inter';
+}
+
+body{ /*primeira parte da pagina definindo a cor do fundo, titulo, font a ser usado, tamanho da font e largura*/
+
+    background-color: var(--cor-fundo);
+    color: var(--cor-titulo1);    
+    font-family: var(--font-padrao);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+
+.firstpart { /* primeira imagem onde fizemos a importação da imagem, pedindo para ela nao se repetir, e definindo o tamanho dela dentro do espaço que ela contem*/
+    
+    background-image: url(Background.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: grid;
+    align-items: center;
+    text-align: center;
+   
+}
+
+.container {
+
+height: 100vh;
+display: grid;
+grid-template-columns: 50% 50%;
+
+}
+
+* {
+
+    margin: 0px;
+    padding: 0px;
+}
+
+.countainer__botao { /* definimos a cor da letra do botao, o fundo que sera usado, a expanção dele, a curvatura da borda, display block para colocar lado a lado, texto sem linha em baixo,*/
+
+    color: var(--cor-titulo1);
+    background-color: var(--cor-botao);
+    padding: 1em;
+    border-radius:5px;
+    display: block;
+    text-decoration: none;
+    margin-bottom: 1em;
+}
+
+.botao_secundario { 
+    color: var(--cor-titulo1);
+    background-color: transparent;
+    padding: 1em;
+    border-radius:5px;
+    display: block;
+    border: 2px solid var(--cor-titulo1);
+    text-decoration: none;
+}
+
+.container__aviso{
+    font-size: 12px;
+    color: var(--cor-aviso);
+    margin: 1em;
+    
+}
+
+.container__imagem {
+
+    margin: 1em 0 2em 0;
+    
+}
+.container__box {
+
+    margin: 0 6em;
+
+}
+
+.box2{ 
+
+    align-items: center;
+    margin: 0 6em ;
+    
+    
+}
+.container__imagemsecundaria {
+
+    display: grid;
+    margin: 0 0 8em 5em;
+    width: 80%;
+}
+
+.titulo__secundario {
+
+    color: var(--cor-titulo1);
+    font-size: 48px;
+    font-weight: 900;
+    margin-left: 26px;
+    
+}
+.aviso__secundario{
+    
+    color :var(--cor-aviso);
+    margin-top: 16px;
+    font-size: 15px;
+    margin-left: 26px;
+}
+
+.box3 {
+
+    align-items: center;
+    margin-left: 100px;
+
+    
+}
+
+.aviso__terceiro{
+
+    color: var(--cor-aviso);
+    margin-bottom: 43px;
+    
+}
+
+.terceiro__botao {
+
+    background-color: var(--cor-botao);
+    text-decoration: none;
+    border-radius: 5px;
+    color: var(--cor-titulo1);
+    padding: 1em;
+    
+}
+
+.quarta__imagem{
+
+    margin: 0 0 0 6em;
+}
+
+.quarto__titulo {
+
+    font-size: 48px;
+    font-weight: 900;
+    color: var(--cor-titulo1);
+    margin-bottom: 8px;
+}
+
+.quarto__aviso{
+
+color: var(--cor-aviso);
+font-size: 15px;
+
+}
+
+.container__quarto {
+
+    margin: 5em 9em 0 0 ;
+
+}
+
+.lista__dispositivos {
+list-style-type: none;
+display: flex;
+justify-content: center;
+margin: 0 0 6em 0;
+}
+
+.dispositivos {
+
+    text-align: center;
+    
+}
+
+.quinto__titulo {
+
+    font-size: 50px;
+    font-weight: 900;
+    margin: 0 0 1em 0;
+}
+
+.normas {
+
+    text-align: center;
+    display: block;
+}
+
+.logo__aluraplus {
+
+    margin: 0 0 2em 0;
+}
+
+.rodape__items{
+    
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    
+
+}
+.lista__link a{
+
+    display: inline-block;
+    margin-right: 40px;
+    text-decoration: none;
+    color: var(--cor-titulo1);
+    
+}
+
+.penultimo__aviso {
+
+    color: var(--cor-aviso);
+    margin: 2em 2em 2em 0;
+}
+.ultimo__aviso {
+
+    color: var(--cor-aviso);
+    font-size: 13px;
+    margin: 0 7em 0 7em;
+}
+
+.lista__link a:hover{
+
+    color: #5a91d5;
+}
+.lista__link a:active {
+
+    color: yellow;
+
+}
+.countainer__botao:hover {
+
+    background-color: yellow;
+    color: black;
+
+}
+.botao_secundario:hover {
+
+background-color:rgb(0, 0, 0);
+color: rgb(255, 255, 255);
+
+}
